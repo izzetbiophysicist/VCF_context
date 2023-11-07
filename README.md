@@ -14,11 +14,11 @@ The resulting text file generated in this step will be used in the subsequent st
 Annovar can be downloaded from: https://annovar.openbioinformatics.org/en/latest/user-guide/download/
 ## Step 2: Fetch Uniprot Annotation with gather_uniprot_annotation.py
 
-2.1. Use the gather_uniprot_annotation.py script with a local TSV file containing all human genes from Uniprot to annotate the VCF. This will add GOs, BRENDA, and PFAM information to each line of the VCF file.
+2.1. Use the step_2_gather_uniprot_annotation.py script with a local TSV file containing all human genes from Uniprot to annotate the VCF. This will add GOs, BRENDA, and PFAM information to each line of the VCF file.
 
 ## Step 3: AlphaMissense
 
-3.1. The final script is designed to find the variants in the AlphaMissense table, which contains pre-calculated human proteome variants. Pathogenicity information is added to the final DataFrame. It is recommended to use a table without commented lines or remarks.
+3.1. The final script (step_3_match_alphamiss.py) is designed to find the variants in the AlphaMissense table, which contains pre-calculated human proteome variants. Pathogenicity information is added to the final DataFrame. It is recommended to use a table without commented lines or remarks.
 
 The AlphaMissense table can be downloaded from: https://github.com/google-deepmind/alphamissense
 Step 4: Creating Structures (Future Updates)
