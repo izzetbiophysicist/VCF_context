@@ -29,9 +29,9 @@ from pyspark.sql.functions import col, collect_list
 from pyspark.sql.functions import col, monotonically_increasing_id
 ### Match AlphaMissense
 
-tsv_file = '/home/lucas/annovar_test/alphamiss_noRemarks.tsv'
+tsv_file = 'alphamiss_noRemarks.tsv'
 
-final = pd.read_csv('/home/lucas/annovar_test/teste.csv')
+final = pd.read_csv('teste.csv')
 all_uniprots=[x.replace("'", "") for x in final['uniprot_IDs']]
 all_uniprots=[x[1:-1].replace("'", "").split(', ')[0] for x in final['uniprot_IDs']]
 
