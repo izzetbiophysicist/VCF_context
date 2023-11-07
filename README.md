@@ -10,7 +10,7 @@ Annovar can be downloaded at: https://annovar.openbioinformatics.org/en/latest/u
 
 
 ## Step 2: Fetch uniprot annotation with gather_uniprot_annotation.py
-This script uses a local tsv file containing all human genes from uniprot to annotate de VCF. GOs, Kegg, Reactome and PFAM information will be added to each line of the VCF file
+This script uses a local tsv file containing all human genes from uniprot to annotate de VCF. GOs, BRENDA and PFAM information will be added to each line of the VCF file
 
 ## Step 3: AlphaMissense
 The final script finds the variants in the AlphaMissense table of pre-calculated human proteome variants, the pathogenicity information is added to the final dataframe
