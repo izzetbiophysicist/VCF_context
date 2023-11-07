@@ -22,11 +22,8 @@ Created on Wed Nov  1 15:04:46 2023
 """
 import pandas as pd
 import ast
-import dask.dataframe as dd
-from pyspark.sql import SparkSession
 import logging
-from pyspark.sql.functions import col, collect_list
-from pyspark.sql.functions import col, monotonically_increasing_id
+
 ### Match AlphaMissense
 
 tsv_file = 'alphamiss_noRemarks.tsv'
@@ -50,7 +47,7 @@ with open(tsv_file, 'r') as input_file:
             # Split the line into columns based on the delimiter (in this case, '\t' for TSV)
             print(c/216175352)
             columns = line.strip().split('\t')
-            uniprot_ID = columns[0]  # Replace 'your_column_index' with the actual column index
+            uniprot_ID = columns[0]  
             variant = columns[1][1:]
             
             if uniprot_ID+','+variant in pairs:
