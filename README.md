@@ -23,4 +23,4 @@ Annovar can be downloaded from: https://annovar.openbioinformatics.org/en/latest
 The AlphaMissense table can be downloaded from: https://github.com/google-deepmind/alphamissense
 Step 4: Creating Structures (Future Updates)
 
-### 4.1. In future updates, the tool will utilize the AlphaFold database and the pyRosetta molecular modeling suite to generate structures for all variants. Stay tuned for more information on this feature.
+### 4.1. In future updates, the tool will utilize the AlphaFold database and the pyRosetta molecular modeling suite to generate structures for all variants.
