@@ -16,8 +16,8 @@ from unipressed import IdMappingClient
 import pandas as pd
 import requests
 
-anno = pd.read_csv('/home/lucas/annovar_test/annovar/annovar_vcf.txt', sep='\t')
-human_uniprot = pd.read_csv('/home/lucas/annovar_test/uniprotkb_homo_sapiens_AND_model_organi_2023_11_01.tsv', sep='\t')
+anno = pd.read_csv('annovar_vcf.txt', sep='\t')
+human_uniprot = pd.read_csv('uniprotkb_homo_sapiens_AND_model_organi_2023_11_01.tsv', sep='\t')
 human_uniprot['Gene Names']
 
 
@@ -110,4 +110,4 @@ exonic = extract_exonic_variants(anno)
 matched_IDs = match_uniprot(exonic[0], human_uniprot)    
 final = compile_annotation(exonic, human_uniprot)
 
-final.to_csv('/home/lucas/annovar_test/teste.csv')
+final.to_csv('teste.csv')
