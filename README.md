@@ -1,6 +1,6 @@
 # VCF_context
 
-This tool is designed to fetch functional annotations, perform AlphaMissense predictions, and generate structures for variants in a VCF file.
+This tool is designed to fetch functional annotations along with AlphaMissense predictions, and generate structures for variants in a VCF file.
 
 ## Step 1: Annotate VCF with Annovar
 1.1. Use the `table_annovar.pl` script to annotate your VCF file. For example:
