@@ -4,7 +4,7 @@ Fetches functional annotation, AlphaMissense Prediction and generates structures
 ## Step 1: Annotate VCF with Annovar
 perl table_annovar.pl example/ex2.vcf humandb/ -buildver hg38 -out myanno -remove -protocol refGene,cytoBand,exac03,avsnp147,dbnsfp30a -operation g,r,f,f,f -arg '-hgvs',,,, -nastring . -vcfinput -polish
 
-The txt file generate in this step will be used for the next steps. In the following scripts, only exonic variants will be considered.
+The txt file generate in this step will be used for the next steps. In the following scripts, only missense variants will be considered.
 
 Annovar can be downloaded at: https://annovar.openbioinformatics.org/en/latest/user-guide/download/
 
