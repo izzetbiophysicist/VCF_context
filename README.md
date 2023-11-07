@@ -5,6 +5,14 @@ This tool is designed to fetch functional annotations, perform AlphaMissense pre
 ## Step 1: Annotate VCF with Annovar
 1.1. Use the `table_annovar.pl` script to annotate your VCF file. For example:
 
+```markdown
+# VCF_context
+
+This tool is designed to fetch functional annotations, perform AlphaMissense predictions, and generate structures for variants in a VCF file.
+
+## Step 1: Annotate VCF with Annovar
+1.1. Use the `table_annovar.pl` script to annotate your VCF file. For example:
+
 ```bash
 perl table_annovar.pl example/ex2.vcf humandb/ -buildver hg38 -out myanno -remove -protocol refGene,cytoBand,exac03,avsnp147,dbnsfp30a -operation g,r,f,f,f -arg '-hgvs',,,, -nastring . -vcfinput -polish
 
