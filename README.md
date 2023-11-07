@@ -30,4 +30,4 @@ Annovar can be downloaded from: Annovar Download
 The AlphaMissense table can be downloaded from: AlphaMissense GitHub
 Step 4: Creating Structures (Future Updates)
 
-4.1. In future updates, the tool will utilize the AlphaFold database and the pyRosetta molecular modeling suite to generate structures for all variants. Stay tuned for more information on this feature.
+### 4.1. In future updates, the tool will utilize the AlphaFold database and the pyRosetta molecular modeling suite to generate structures for all variants. Stay tuned for more information on this feature.
