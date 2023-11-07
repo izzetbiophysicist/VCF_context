@@ -6,6 +6,9 @@ perl table_annovar.pl example/ex2.vcf humandb/ -buildver hg38 -out myanno -remov
 
 The txt file generate in this step will be used for the next steps. In the following scripts, only exonic variants will be considered.
 
+Annovar can be downloaded at: https://annovar.openbioinformatics.org/en/latest/user-guide/download/
+
+
 ## Step 2: Fetch uniprot annotation with gather_uniprot_annotation.py
 This script uses a local tsv file containing all human genes from uniprot to annotate de VCF. GOs, Kegg, Reactome and PFAM information will be added to each line of the VCF file
 
