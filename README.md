@@ -11,3 +11,5 @@ This script uses a local tsv file containing all human genes from uniprot to ann
 
 ## Step 3: AlphaMissense
 The final script finds the variants in the AlphaMissense table of pre-calculated human proteome variants, the pathogenicity information is added to the final dataframe
+
+## Step 4: Using AlphaFold database and pyRosetta molecular modeling suite, structures of all variants will be created (Next updates??)
